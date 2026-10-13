@@ -1,0 +1,84 @@
+// Reset layer: remove browser inconsistencies
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  figure,
+  ul {
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Base layer: sensible defaults and accessibility basics
+@layer base {
+  body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-family-heading);
+    line-height: var(--line-height-heading);
+  }
+
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+  h3 { font-size: var(--font-size-lg); }
+
+  a {
+    color: var(--color-primary);
+  }
+
+  // Visible focus state for keyboard users
+  :focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  // Skip link: hidden until focused, lets keyboard users jump past the nav
+  .skip-link {
+    position: absolute;
+    left: var(--space-md);
+    top: -4rem;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+
+    &:focus {
+      top: var(--space-md);
+    }
+  }
+
+  // Respect users who turn off animations
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}

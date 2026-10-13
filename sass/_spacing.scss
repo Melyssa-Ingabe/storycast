@@ -1,0 +1,23 @@
+// Spacing tokens
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+$space-2xl: 3rem;
+$space-3xl: 4rem;
+
+$container-max-width: 70rem;
+$radius-md: 0.5rem;
+
+:root {
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+  --space-xl: #{$space-xl};
+  --space-2xl: #{$space-2xl};
+  --space-3xl: #{$space-3xl};
+  --container-max-width: #{$container-max-width};
+  --radius-md: #{$radius-md};
+}

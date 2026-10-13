@@ -1,0 +1,23 @@
+@layer layout {
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+
+    // Yellow focus ring is visible on the dark purple background
+    :focus-visible {
+      outline-color: var(--color-focus);
+    }
+  }
+
+  .site-header__brand {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,22 @@
+// Color tokens
+$color-bg: #ffffff;
+$color-surface: #f4f1fa;
+$color-text: #1a1a2e;
+$color-text-muted: #4a4a5e;
+$color-primary: #4b2e83;
+$color-primary-contrast: #ffffff;
+$color-accent: #b3261e;
+$color-focus: #ffbf47;
+$color-border: #6b6b80;
+
+:root {
+  --color-bg: #{$color-bg};
+  --color-surface: #{$color-surface};
+  --color-text: #{$color-text};
+  --color-text-muted: #{$color-text-muted};
+  --color-primary: #{$color-primary};
+  --color-primary-contrast: #{$color-primary-contrast};
+  --color-accent: #{$color-accent};
+  --color-focus: #{$color-focus};
+  --color-border: #{$color-border};
+}

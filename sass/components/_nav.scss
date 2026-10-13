@@ -1,0 +1,25 @@
+@layer components {
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+  }
+
+  .nav__link {
+    display: inline-block;
+    padding: var(--space-xs) 0;
+    color: var(--color-primary-contrast);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom-color: var(--color-primary-contrast);
+    }
+
+    // Marks the current page, not by color alone
+    &[aria-current="page"] {
+      font-weight: 700;
+      border-bottom-color: var(--color-focus);
+    }
+  }
+}
