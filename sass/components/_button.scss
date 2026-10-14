@@ -1,0 +1,18 @@
+@layer components {
+  .button {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-md);
+
+    // Hover is a visible change that doesn't rely on color alone
+    &:hover {
+      background-color: var(--color-primary-contrast);
+      color: var(--color-primary);
+    }
+  }
+}
