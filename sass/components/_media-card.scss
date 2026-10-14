@@ -1,0 +1,56 @@
+@layer components {
+  .media-card {
+    position: relative;
+    padding: var(--space-md);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    // Makes the card itself the container, so its contents
+    // respond to the card's width, not the window's width
+    container: media-card / inline-size;
+
+    // Whole card is clickable through the title link
+    &:focus-within {
+      outline: 3px solid var(--color-primary);
+      outline-offset: 3px;
+    }
+  }
+
+  .media-card__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-xs);
+
+    a {
+      color: var(--color-text);
+
+      // Stretches the link's clickable area over the whole card
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+    }
+  }
+
+  .media-card__meta {
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  // Container query: when the card is wide, give it more room and bigger type
+  @container media-card (min-width: 24rem) {
+    .media-card__title {
+      font-size: var(--font-size-xl);
+    }
+
+    .media-card__meta {
+      font-size: var(--font-size-md);
+    }
+
+    .media-card__summary {
+      max-width: 32rem;
+    }
+  }
+}
