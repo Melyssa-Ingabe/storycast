@@ -23,6 +23,10 @@
       border-radius: var(--radius-md);
     }
 
+    audio {
+      width: 100%;
+    }
+
     figcaption {
       margin-top: var(--space-sm);
       font-size: var(--font-size-sm);

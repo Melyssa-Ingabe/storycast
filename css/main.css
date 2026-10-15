@@ -276,6 +276,9 @@
     background-color: #000;
     border-radius: var(--radius-md);
   }
+  .story__media audio {
+    width: 100%;
+  }
   .story__media figcaption {
     margin-top: var(--space-sm);
     font-size: var(--font-size-sm);
