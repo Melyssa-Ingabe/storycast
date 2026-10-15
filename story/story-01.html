@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story one title | StoryCast</title>
+  <meta name="description" content="A short description of the first story goes here.">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="site-header__brand">StoryCast</p>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../index.html">Home</a></li>
+        <li><a class="nav__link" href="story-01.html" aria-current="page">Stories</a></li>
+        <li><a class="nav__link" href="../about.html">About &amp; Access</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a> / <span aria-current="page">Story one title</span>
+    </nav>
+
+    <article class="story">
+      <header class="story__header">
+        <h1>Story one title</h1>
+        <p class="story__meta">Video &middot; 6 min &middot; Captions and transcript available</p>
+      </header>
+
+      <figure class="story__media">
+        <video controls preload="metadata" poster="../assets/images/story-01-poster.jpg">
+          <source src="../assets/video/story-01.mp4" type="video/mp4">
+          <track kind="captions" src="../assets/transcripts/story-01.vtt" srclang="en" label="English" default>
+          <p>Your browser doesn't support video. <a href="../assets/video/story-01.mp4">Download the video</a> or read the transcript below.</p>
+        </video>
+        <figcaption>
+          A short description of what happens in the video, for people who can't see it.
+        </figcaption>
+      </figure>
+
+      <section class="transcript" aria-labelledby="transcript-title">
+        <h2 id="transcript-title">Transcript</h2>
+        <p><strong>Narrator:</strong> The full text of what is said in the video goes here.</p>
+        <p><strong>Narrator:</strong> Describe important sounds or visuals in square brackets, for example [soft music].</p>
+      </section>
+    </article>
+
+    <section class="related" aria-labelledby="related-title">
+      <h2 id="related-title">Related stories</h2>
+
+      <div class="featured__grid">
+        <article class="media-card">
+          <h3 class="media-card__title">
+            <a href="story-02.html">Story two title</a>
+          </h3>
+          <p class="media-card__meta">Audio &middot; 8 min &middot; Transcript</p>
+          <p class="media-card__summary">A short description of the second story goes here.</p>
+        </article>
+
+        <article class="media-card">
+          <h3 class="media-card__title">
+            <a href="story-03.html">Story three title</a>
+          </h3>
+          <p class="media-card__meta">Audio &middot; 5 min &middot; Transcript</p>
+          <p class="media-card__summary">A short description of the third story goes here.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StoryCast. Built with accessibility in mind.</p>
+    <p><a href="../about.html">Read about our accessibility features</a></p>
+  </footer>
+</body>
+</html>
