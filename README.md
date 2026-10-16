@@ -89,10 +89,9 @@ storycast/
 
 ## Design and research
 
-- Research document (PDF): `docs/` *(add link)*
-- Sitemap: `docs/` *(add link)*
-- Wireframes (Figma): *(add link)*
-- High-fidelity mockups (Figma): *(add link)*
+- Research document (PDF): `docs/research-document.pdf` *https://docs.google.com/document/d/1GISwTzxUgBFdC1cQIVOYZsldblZiuoJ9E0YbwYQ9ibQ/edit?usp=sharing*
+- Sitemap: `docs/sitemap.png` 
+- Wireframes and High-fidelity mockups (Figma): *https://www.figma.com/design/j32T6KzJ4OqOhpegSQVavo/StoryCast?node-id=1-142&t=IploMlBXFu9iEKcl-1*
 
 ## Media credits
 
